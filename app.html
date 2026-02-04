@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PriamyKuriér App Preview</title>
+    <meta
+      name="description"
+      content="Interactive preview of the PriamyKuriér mobile app experience."
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="container header-row">
+        <div class="logo">PriamyKuriér</div>
+        <a class="back-link" href="index.html">Back to website</a>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="container app-layout">
+        <div class="app-info">
+          <h1>Mobile app experience</h1>
+          <p>
+            The PriamyKuriér app supports live tracking, proof of delivery, and
+            real-time earnings for couriers and companies. Use the tabs to explore
+            each workflow.
+          </p>
+          <div class="info-grid">
+            <div class="info-card">
+              <h3>Quote jobs</h3>
+              <p>Per-kilometer pricing with minimum rate protection.</p>
+            </div>
+            <div class="info-card">
+              <h3>Capture proof</h3>
+              <p>Photos and signatures at pickup and delivery.</p>
+            </div>
+            <div class="info-card">
+              <h3>Track earnings</h3>
+              <p>Invoice status and payout history in one view.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-demo">
+          <div class="app-tabs" role="tablist" aria-label="App screens">
+            <button class="app-tab active" data-screen-target="home" role="tab">
+              Home
+            </button>
+            <button class="app-tab" data-screen-target="job" role="tab">
+              Job detail
+            </button>
+            <button class="app-tab" data-screen-target="tracking" role="tab">
+              Tracking
+            </button>
+            <button class="app-tab" data-screen-target="pod" role="tab">
+              Proof of delivery
+            </button>
+            <button class="app-tab" data-screen-target="accounting" role="tab">
+              Accounting
+            </button>
+          </div>
+
+          <div class="phone">
+            <section class="app-screen active" data-screen="home">
+              <div class="status-bar">
+                <span>9:41</span>
+                <span>LTE</span>
+              </div>
+              <div class="screen-header">
+                <div>
+                  <p class="screen-eyebrow">Good morning</p>
+                  <h2>Available jobs</h2>
+                </div>
+                <button class="pill-button" type="button">Live map</button>
+              </div>
+              <div class="screen-content">
+                <div class="mini-map"></div>
+                <div class="job-card">
+                  <div>
+                    <h3>Bratislava → Trnava</h3>
+                    <p>55 km · Medium van · Straps</p>
+                  </div>
+                  <span class="tag">€0.55/km</span>
+                </div>
+                <div class="job-card secondary">
+                  <div>
+                    <h3>Nitra → Zvolen</h3>
+                    <p>128 km · Large van · Blankets</p>
+                  </div>
+                  <span class="tag">€0.62/km</span>
+                </div>
+              </div>
+              <div class="bottom-nav">
+                <span class="active">Home</span>
+                <span>Jobs</span>
+                <span>Tracking</span>
+                <span>Account</span>
+              </div>
+            </section>
+
+            <section class="app-screen" data-screen="job">
+              <div class="status-bar">
+                <span>9:41</span>
+                <span>LTE</span>
+              </div>
+              <div class="screen-header">
+                <div>
+                  <p class="screen-eyebrow">Job detail</p>
+                  <h2>Retail pallets</h2>
+                </div>
+                <span class="tag">55 km</span>
+              </div>
+              <div class="screen-content">
+                <div class="detail-row">
+                  <span>Vehicle size</span>
+                  <strong>Medium van</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Load</span>
+                  <strong>240 x 120 x 160 cm · 420 kg</strong>
+                </div>
+                <div class="detail-row">
+                  <span>Equipment</span>
+                  <strong>Straps, blankets</strong>
+                </div>
+                <div class="quote-box">
+                  <label>
+                    Quote (€/km)
+                    <input type="number" value="0.55" min="0.35" step="0.01" />
+                  </label>
+                  <p class="quote-note">Minimum €0.35/km enforced.</p>
+                  <button class="primary-button" type="button">Submit quote</button>
+                </div>
+              </div>
+              <div class="bottom-nav">
+                <span>Home</span>
+                <span class="active">Jobs</span>
+                <span>Tracking</span>
+                <span>Account</span>
+              </div>
+            </section>
+
+            <section class="app-screen" data-screen="tracking">
+              <div class="status-bar">
+                <span>9:41</span>
+                <span>LTE</span>
+              </div>
+              <div class="screen-header">
+                <div>
+                  <p class="screen-eyebrow">Live tracking</p>
+                  <h2>Bratislava → Trnava</h2>
+                </div>
+                <span class="tag">On route</span>
+              </div>
+              <div class="screen-content">
+                <div class="route-map"></div>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="dot"></span>
+                    <div>
+                      <strong>Collected</strong>
+                      <p>09:05 · Eurovea, Bratislava</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="dot"></span>
+                    <div>
+                      <strong>In transit</strong>
+                      <p>ETA 10:20 · 24 km remaining</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="secondary-button" type="button">
+                  Share tracking link
+                </button>
+              </div>
+              <div class="bottom-nav">
+                <span>Home</span>
+                <span>Jobs</span>
+                <span class="active">Tracking</span>
+                <span>Account</span>
+              </div>
+            </section>
+
+            <section class="app-screen" data-screen="pod">
+              <div class="status-bar">
+                <span>9:41</span>
+                <span>LTE</span>
+              </div>
+              <div class="screen-header">
+                <div>
+                  <p class="screen-eyebrow">Proof of delivery</p>
+                  <h2>Capture evidence</h2>
+                </div>
+                <span class="tag">Required</span>
+              </div>
+              <div class="screen-content">
+                <div class="photo-grid">
+                  <div class="photo-box">Pickup photos</div>
+                  <div class="photo-box">Load photos</div>
+                  <div class="photo-box">Delivery photos</div>
+                </div>
+                <div class="signature-box">
+                  <p>Collector signature</p>
+                  <div class="signature-pad"></div>
+                </div>
+                <div class="signature-box">
+                  <p>Receiver signature</p>
+                  <div class="signature-pad"></div>
+                </div>
+                <button class="primary-button" type="button">Submit proof</button>
+              </div>
+              <div class="bottom-nav">
+                <span>Home</span>
+                <span>Jobs</span>
+                <span class="active">Tracking</span>
+                <span>Account</span>
+              </div>
+            </section>
+
+            <section class="app-screen" data-screen="accounting">
+              <div class="status-bar">
+                <span>9:41</span>
+                <span>LTE</span>
+              </div>
+              <div class="screen-header">
+                <div>
+                  <p class="screen-eyebrow">Accounting</p>
+                  <h2>Earnings summary</h2>
+                </div>
+                <span class="tag">This month</span>
+              </div>
+              <div class="screen-content">
+                <div class="stat-grid">
+                  <div>
+                    <p>Total earned</p>
+                    <strong>€2,460.40</strong>
+                  </div>
+                  <div>
+                    <p>Outstanding</p>
+                    <strong>€640.10</strong>
+                  </div>
+                  <div>
+                    <p>Paid</p>
+                    <strong>€1,820.30</strong>
+                  </div>
+                </div>
+                <div class="invoice-list">
+                  <div class="invoice-row">
+                    <div>
+                      <strong>INV-24031</strong>
+                      <p>Due in 15 days</p>
+                    </div>
+                    <span class="tag">€220.50</span>
+                  </div>
+                  <div class="invoice-row">
+                    <div>
+                      <strong>INV-24030</strong>
+                      <p>Paid</p>
+                    </div>
+                    <span class="tag">€410.00</span>
+                  </div>
+                </div>
+                <button class="secondary-button" type="button">
+                  Link bank account
+                </button>
+              </div>
+              <div class="bottom-nav">
+                <span>Home</span>
+                <span>Jobs</span>
+                <span>Tracking</span>
+                <span class="active">Account</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
