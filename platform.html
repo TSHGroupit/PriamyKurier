@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PriamyKuriér Platform Workspace</title>
+    <meta
+      name="description"
+      content="Front-facing platform demo for companies and couriers using PriamyKuriér."
+    />
+    <link rel="stylesheet" href="platform.css" />
+    <script defer src="platform.js"></script>
+  </head>
+  <body>
+    <header class="platform-header">
+      <div class="container header-row">
+        <div class="logo">PriamyKuriér</div>
+        <nav class="nav-links">
+          <a href="index.html">Website</a>
+          <a href="app.html">App preview</a>
+          <a href="#job-board">Jobs</a>
+          <a href="#tracking">Tracking</a>
+          <a href="#accounting">Accounting</a>
+        </nav>
+        <div class="header-actions">
+          <button class="ghost" type="button">EN</button>
+          <button class="primary" type="button">Create job</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="platform-main">
+      <section class="intro">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">Platform workspace</p>
+            <h1>Operate every delivery in one verified marketplace.</h1>
+            <p class="lead">
+              Switch between company and courier views to explore job posting,
+              quoting, tracking, proof of delivery, and accounting from the
+              PriamyKuriér platform.
+            </p>
+            <div class="role-toggle" role="tablist" aria-label="Platform views">
+              <button class="role-button active" data-role="company" role="tab">
+                Company view
+              </button>
+              <button class="role-button" data-role="courier" role="tab">
+                Courier view
+              </button>
+            </div>
+          </div>
+          <div class="intro-card">
+            <h3>Fee automation</h3>
+            <ul>
+              <li>€2.50 charged on every job posting.</li>
+              <li>6% success fee deducted on completion.</li>
+              <li>Minimum courier rate of €0.35/km.</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">English first</span>
+              <span class="pill">Slovak next</span>
+              <span class="pill">Subscriptions planned</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container stats-grid">
+          <div class="stat-card">
+            <h3>Active jobs</h3>
+            <strong>18</strong>
+            <p>4 awaiting quotes, 9 in transit, 5 delivered.</p>
+          </div>
+          <div class="stat-card">
+            <h3>Verified couriers</h3>
+            <strong>312</strong>
+            <p>Vehicle, insurance, and ID checks completed.</p>
+          </div>
+          <div class="stat-card">
+            <h3>Invoices due</h3>
+            <strong>€12,480</strong>
+            <p>Net 45 payment terms tracked automatically.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section role-view active" data-view="company">
+        <div class="container">
+          <div class="section-title">
+            <h2>Company workspace</h2>
+            <p>Post jobs, review quotes, and track deliveries in real time.</p>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Post a new job</h3>
+              <form class="form-grid" aria-label="Post a new job">
+                <label>
+                  Load description
+                  <input type="text" placeholder="e.g. 2 pallets of electronics" />
+                </label>
+                <label>
+                  Vehicle size
+                  <select>
+                    <option>Small van</option>
+                    <option>Medium van</option>
+                    <option>Large van</option>
+                    <option>Luton / box van</option>
+                  </select>
+                </label>
+                <label>
+                  Load dimensions (L x W x H)
+                  <input type="text" placeholder="cm" />
+                </label>
+                <label>
+                  Load weight (kg)
+                  <input type="number" placeholder="0" />
+                </label>
+                <label>
+                  Collection address
+                  <input type="text" placeholder="Street, city, postcode" />
+                </label>
+                <label>
+                  Delivery address
+                  <input type="text" placeholder="Street, city, postcode" />
+                </label>
+                <label>
+                  Distance (km)
+                  <input type="number" placeholder="0" />
+                </label>
+                <label>
+                  Required equipment
+                  <input type="text" placeholder="Straps, blankets, sack truck" />
+                </label>
+                <label>
+                  Reference number
+                  <input type="text" placeholder="Optional" />
+                </label>
+                <label>
+                  Collection contact
+                  <input type="text" placeholder="Name and phone number" />
+                </label>
+              </form>
+              <div class="fee-row">
+                <span>Posting fee</span>
+                <strong>€2.50</strong>
+              </div>
+              <button class="primary full-width" type="button">Submit job</button>
+            </div>
+
+            <div class="card" id="job-board">
+              <h3>Open quotes</h3>
+              <div class="job-quote">
+                <div>
+                  <h4>Bratislava → Trnava</h4>
+                  <p>55 km · Medium van · 2 quotes</p>
+                </div>
+                <div class="quote-actions">
+                  <span class="tag">€0.55/km</span>
+                  <button class="secondary" type="button">Accept</button>
+                </div>
+              </div>
+              <div class="job-quote">
+                <div>
+                  <h4>Nitra → Zvolen</h4>
+                  <p>128 km · Large van · 3 quotes</p>
+                </div>
+                <div class="quote-actions">
+                  <span class="tag">€0.60/km</span>
+                  <button class="secondary" type="button">Review</button>
+                </div>
+              </div>
+              <div class="job-quote">
+                <div>
+                  <h4>Kosice → Presov</h4>
+                  <p>39 km · Small van · 1 quote</p>
+                </div>
+                <div class="quote-actions">
+                  <span class="tag">€0.45/km</span>
+                  <button class="secondary" type="button">Accept</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2 section-spacer" id="tracking">
+            <div class="card">
+              <h3>Live tracking</h3>
+              <div class="map"></div>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="dot"></span>
+                  <div>
+                    <strong>Collected</strong>
+                    <p>09:05 · Eurovea, Bratislava</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="dot"></span>
+                  <div>
+                    <strong>In transit</strong>
+                    <p>ETA 10:20 · 24 km remaining</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <span class="dot"></span>
+                  <div>
+                    <strong>Delivery proof pending</strong>
+                    <p>Awaiting receiver signature and photos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Proof of delivery</h3>
+              <div class="photo-grid">
+                <div class="photo-box">Pickup photos (3)</div>
+                <div class="photo-box">Load photos (2)</div>
+                <div class="photo-box">Delivery photos (pending)</div>
+                <div class="photo-box">Signatures (1/2)</div>
+              </div>
+              <div class="signature-row">
+                <div>
+                  <p>Collector signature</p>
+                  <div class="signature-pad"></div>
+                </div>
+                <div>
+                  <p>Receiver signature</p>
+                  <div class="signature-pad"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2 section-spacer" id="accounting">
+            <div class="card">
+              <h3>Spend summary</h3>
+              <div class="range-row">
+                <span>Date range</span>
+                <select>
+                  <option>This week</option>
+                  <option>This month</option>
+                  <option>This year</option>
+                  <option>Custom range</option>
+                </select>
+              </div>
+              <div class="stat-grid">
+                <div>
+                  <p>Total spend</p>
+                  <strong>€8,420.00</strong>
+                </div>
+                <div>
+                  <p>Outstanding</p>
+                  <strong>€1,240.00</strong>
+                </div>
+                <div>
+                  <p>Paid</p>
+                  <strong>€7,180.00</strong>
+                </div>
+              </div>
+              <button class="secondary full-width" type="button">
+                Link company bank account
+              </button>
+            </div>
+            <div class="card">
+              <h3>Open invoices</h3>
+              <div class="invoice-row">
+                <div>
+                  <strong>INV-24045</strong>
+                  <p>Due in 22 days · Bratislava → Trnava</p>
+                </div>
+                <span class="tag">€760.50</span>
+              </div>
+              <div class="invoice-row">
+                <div>
+                  <strong>INV-24044</strong>
+                  <p>Due in 31 days · Nitra → Zvolen</p>
+                </div>
+                <span class="tag">€980.10</span>
+              </div>
+              <div class="invoice-row">
+                <div>
+                  <strong>INV-24043</strong>
+                  <p>Paid · Kosice → Presov</p>
+                </div>
+                <span class="tag">€410.00</span>
+              </div>
+              <button class="secondary full-width" type="button">
+                Export to accounting
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section role-view" data-view="courier">
+        <div class="container">
+          <div class="section-title">
+            <h2>Courier workspace</h2>
+            <p>Verify compliance, quote jobs, and capture delivery proof.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="card" id="compliance">
+              <h3>Compliance verification</h3>
+              <ul class="status-list">
+                <li>
+                  <span>Vehicle ownership</span>
+                  <span class="status ok">Verified</span>
+                </li>
+                <li>
+                  <span>Goods in transit insurance</span>
+                  <span class="status ok">Verified</span>
+                </li>
+                <li>
+                  <span>Driving license</span>
+                  <span class="status ok">Verified</span>
+                </li>
+                <li>
+                  <span>Passport / ID card</span>
+                  <span class="status pending">Upload required</span>
+                </li>
+                <li>
+                  <span>Load capacity</span>
+                  <span class="status ok">Verified</span>
+                </li>
+              </ul>
+              <button class="secondary full-width" type="button">
+                Upload compliance documents
+              </button>
+            </div>
+
+            <div class="card">
+              <h3>Quote builder</h3>
+              <label>
+                Distance (km)
+                <input
+                  id="courier-distance"
+                  type="number"
+                  min="0"
+                  step="1"
+                  value="120"
+                />
+              </label>
+              <label>
+                Rate (€/km)
+                <input
+                  id="courier-rate"
+                  type="number"
+                  min="0.35"
+                  step="0.01"
+                  value="0.55"
+                />
+              </label>
+              <p id="courier-rate-note" class="note">
+                Minimum €0.35/km enforced.
+              </p>
+              <div class="calc-results">
+                <div>
+                  <span>Job value</span>
+                  <strong id="courier-job-value">€0.00</strong>
+                </div>
+                <div>
+                  <span>Platform success fee (6%)</span>
+                  <strong id="courier-success-fee">€0.00</strong>
+                </div>
+                <div>
+                  <span>Your payout</span>
+                  <strong id="courier-payout">€0.00</strong>
+                </div>
+              </div>
+              <button class="primary full-width" type="button">
+                Submit quote
+              </button>
+            </div>
+          </div>
+
+          <div class="grid-2 section-spacer">
+            <div class="card">
+              <h3>Active delivery</h3>
+              <div class="job-quote">
+                <div>
+                  <h4>Bratislava → Trnava</h4>
+                  <p>55 km · Medium van · Collection 08:30</p>
+                </div>
+                <span class="tag">Live</span>
+              </div>
+              <div class="photo-grid">
+                <div class="photo-box">Pickup location</div>
+                <div class="photo-box">Goods loaded</div>
+                <div class="photo-box">Delivery location</div>
+                <div class="photo-box">Goods delivered</div>
+              </div>
+              <div class="signature-row">
+                <div>
+                  <p>Sender signature</p>
+                  <div class="signature-pad"></div>
+                </div>
+                <div>
+                  <p>Receiver signature</p>
+                  <div class="signature-pad"></div>
+                </div>
+              </div>
+              <button class="primary full-width" type="button">
+                Complete delivery
+              </button>
+            </div>
+
+            <div class="card">
+              <h3>Earnings and invoices</h3>
+              <div class="stat-grid">
+                <div>
+                  <p>Today</p>
+                  <strong>€210.00</strong>
+                </div>
+                <div>
+                  <p>This week</p>
+                  <strong>€1,140.00</strong>
+                </div>
+                <div>
+                  <p>This month</p>
+                  <strong>€3,980.00</strong>
+                </div>
+              </div>
+              <div class="invoice-row">
+                <div>
+                  <strong>INV-24031</strong>
+                  <p>Due in 15 days</p>
+                </div>
+                <span class="tag">€220.50</span>
+              </div>
+              <div class="invoice-row">
+                <div>
+                  <strong>INV-24030</strong>
+                  <p>Paid</p>
+                </div>
+                <span class="tag">€410.00</span>
+              </div>
+              <button class="secondary full-width" type="button">
+                Link bank account
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="platform-footer">
+      <div class="container footer-row">
+        <span>© 2026 PriamyKuriér. Platform preview.</span>
+        <span>Support: hello@priamykurier.sk</span>
+      </div>
+    </footer>
+  </body>
+</html>
