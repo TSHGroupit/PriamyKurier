@@ -1,0 +1,1496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PriamyKuriér | National Courier Marketplace</title>
+    <meta
+      name="description"
+      content="PriamyKuriér is a national courier marketplace for on-demand and repeat delivery work with built-in payments, tracking, and proof of delivery."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">PriamyKuriér</div>
+        <nav class="nav-links">
+          <a href="#platform">Platform</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#tracking">Tracking</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#app">App</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="ghost" type="button">Log in</button>
+          <a class="primary" href="#contact">Get started</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="platform">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">National courier marketplace for Slovakia</p>
+            <h1>On-demand and repeat courier work, delivered with certainty.</h1>
+            <p class="lead">
+              Companies post delivery jobs, verified couriers quote per kilometer,
+              and PriamyKuriér handles compliance, payments, tracking, and proof of
+              delivery in one modern platform.
+            </p>
+            <div class="cta-row">
+              <a class="primary" href="#post-job">Post a job</a>
+              <a class="secondary" href="#driver">Join as courier</a>
+            </div>
+            <div class="hero-notes">
+              <div class="note">€2.50 posting fee per job</div>
+              <div class="note">6% success fee on completion</div>
+              <div class="note">Minimum quote €0.35/km</div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Platform snapshot</h3>
+            <ul class="stacked-list">
+              <li>English launch, Slovak localization next.</li>
+              <li>Integrated payments with automated commission.</li>
+              <li>Proof of delivery with photos and signatures.</li>
+              <li>Driver compliance verification before approval.</li>
+              <li>Web + app access for companies and couriers.</li>
+            </ul>
+            <div class="card-footer">
+              Built for courier companies, self-employed drivers, and SMBs.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container stats-grid">
+          <div class="stat-card">
+            <h4>Verified marketplace</h4>
+            <p>
+              Every driver account requires vehicle ownership, insurance, license,
+              ID, and load capacity checks before activation.
+            </p>
+          </div>
+          <div class="stat-card">
+            <h4>Transparent pricing</h4>
+            <p>
+              Companies pay a €2.50 posting fee per job and 6% success fee on
+              completion. Couriers never quote below €0.35/km.
+            </p>
+          </div>
+          <div class="stat-card">
+            <h4>Live tracking</h4>
+            <p>
+              Companies track jobs in real time and receive collection and delivery
+              proof with photos and signatures.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="workflow">
+        <div class="container">
+          <div class="section-title">
+            <h2>Two-sided workflow that protects every delivery</h2>
+            <p>
+              PriamyKuriér connects companies and couriers with a clear job lifecycle
+              and automated billing at each step.
+            </p>
+          </div>
+          <div class="grid-2">
+            <div class="flow-card">
+              <h3>For companies</h3>
+              <ol>
+                <li>Post a delivery job with full load details and addresses.</li>
+                <li>Review quotes from verified couriers and accept the best fit.</li>
+                <li>Track the job live and receive proof of delivery.</li>
+                <li>Pay invoices on net 45 days with automated reminders.</li>
+              </ol>
+            </div>
+            <div class="flow-card">
+              <h3>For couriers</h3>
+              <ol>
+                <li>Complete compliance verification to activate your profile.</li>
+                <li>Quote jobs by distance with per-kilometer pricing.</li>
+                <li>Collect proof at pickup and delivery inside the app.</li>
+                <li>Get paid automatically after completion and approval.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="post-job">
+        <div class="container">
+          <div class="section-title">
+            <h2>Job posting requirements</h2>
+            <p>
+              Companies must provide full shipment details so couriers can quote
+              accurately and safely.
+            </p>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Required job details</h3>
+              <ul class="check-list">
+                <li>Load size: length, width, height, and weight.</li>
+                <li>Required vehicle size and load capacity.</li>
+                <li>Collection and delivery addresses with references.</li>
+                <li>Distance between collection and delivery points.</li>
+                <li>Collection and delivery windows with contact names.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Additional requirements</h3>
+              <ul class="check-list">
+                <li>Equipment: straps, blankets, sack trucks.</li>
+                <li>Handling notes and fragile or oversized items.</li>
+                <li>Special access or site-specific instructions.</li>
+                <li>Optional internal reference numbers for accounting.</li>
+                <li>Insurance value declarations for higher-risk loads.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-card">
+            <h3>Job posting preview</h3>
+            <form class="form-grid" aria-label="Job posting form preview">
+              <label>
+                Load description
+                <input type="text" placeholder="e.g. 2 pallets of retail stock" />
+              </label>
+              <label>
+                Vehicle size
+                <select>
+                  <option>Small van</option>
+                  <option>Medium van</option>
+                  <option>Large van</option>
+                  <option>Luton / box van</option>
+                </select>
+              </label>
+              <label>
+                Collection address
+                <input type="text" placeholder="Street, city, postcode" />
+              </label>
+              <label>
+                Delivery address
+                <input type="text" placeholder="Street, city, postcode" />
+              </label>
+              <label>
+                Load dimensions (L x W x H)
+                <input type="text" placeholder="cm" />
+              </label>
+              <label>
+                Weight (kg)
+                <input type="number" placeholder="0" />
+              </label>
+              <label>
+                Required equipment
+                <input type="text" placeholder="Straps, blankets, sack truck" />
+              </label>
+              <label>
+                Reference number
+                <input type="text" placeholder="Optional" />
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="driver">
+        <div class="container">
+          <div class="section-title">
+            <h2>Driver verification and compliance</h2>
+            <p>
+              Accounts are approved only after documentation is verified by an
+              internal workflow or external compliance checker integration.
+            </p>
+          </div>
+          <div class="grid-3">
+            <div class="card">
+              <h3>Vehicle ownership</h3>
+              <p>Proof of ownership, vehicle size, and load area dimensions.</p>
+            </div>
+            <div class="card">
+              <h3>Insurance checks</h3>
+              <p>Goods-in-transit and required courier insurance validations.</p>
+            </div>
+            <div class="card">
+              <h3>Driver identity</h3>
+              <p>Driving license, passport or ID card, and right-to-work checks.</p>
+            </div>
+          </div>
+          <div class="card banner-card">
+            <div>
+              <h3>Compliance integrations</h3>
+              <p>
+                Plug into third-party compliance services or use the built-in
+                verification workflow to manage documentation status, expiry dates,
+                and audit history.
+              </p>
+            </div>
+            <button class="secondary" type="button">Explore integrations</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tracking">
+        <div class="container">
+          <div class="section-title">
+            <h2>Live tracking and proof of delivery</h2>
+            <p>
+              Every job includes live GPS tracking plus photo and signature capture
+              at collection and delivery.
+            </p>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Collection workflow</h3>
+              <ul class="check-list">
+                <li>Capture sender name and signature on pickup.</li>
+                <li>Upload photos of the pickup location and goods.</li>
+                <li>Confirm load secured with required equipment.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Delivery workflow</h3>
+              <ul class="check-list">
+                <li>Capture receiver name and signature on delivery.</li>
+                <li>Upload delivery location photos and goods condition.</li>
+                <li>Automatic notification sent to the hiring company.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="payments">
+        <div class="container">
+          <div class="section-title">
+            <h2>Payments, commissions, and invoicing</h2>
+            <p>
+              Fees are automated so every job is paid through the platform with
+              commission collected before courier payout.
+            </p>
+          </div>
+          <div class="grid-3">
+            <div class="card">
+              <h3>Job posting fee</h3>
+              <p>€2.50 charged instantly when a company posts a job.</p>
+            </div>
+            <div class="card">
+              <h3>Success fee</h3>
+              <p>6% platform commission applied on successful completion.</p>
+            </div>
+            <div class="card">
+              <h3>Net 45 invoices</h3>
+              <p>Invoices are generated automatically and due within 45 days.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="accounting">
+        <div class="container">
+          <div class="section-title">
+            <h2>Accounting dashboards</h2>
+            <p>
+              Couriers and companies get real-time financial visibility across
+              day, week, month, year, or custom ranges.
+            </p>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Courier accounting</h3>
+              <ul class="check-list">
+                <li>Outstanding and paid invoices with status history.</li>
+                <li>Earnings by day, week, month, year, or custom range.</li>
+                <li>Linked bank accounts for automated payouts.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Company accounting</h3>
+              <ul class="check-list">
+                <li>Total spend and open invoices by date range.</li>
+                <li>Linked bank accounts for streamlined payments.</li>
+                <li>Export-ready data for accounting software.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="map">
+        <div class="container">
+          <div class="section-title">
+            <h2>Live job map</h2>
+            <p>
+              Companies and couriers can open a live map of Slovakia to view open
+              jobs, available routes, and active deliveries.
+            </p>
+          </div>
+          <div class="map-card">
+            <div class="map">
+              <div class="pin pin-a">BA</div>
+              <div class="pin pin-b">NR</div>
+              <div class="pin pin-c">KE</div>
+              <div class="pin pin-d">BB</div>
+            </div>
+            <div class="map-list">
+              <div class="job-item">
+                <h4>Bratislava to Trnava</h4>
+                <p>Medium van | 55 km | Equipment: straps</p>
+              </div>
+              <div class="job-item">
+                <h4>Nitra to Zvolen</h4>
+                <p>Large van | 128 km | Equipment: blankets</p>
+              </div>
+              <div class="job-item">
+                <h4>Kosice to Presov</h4>
+                <p>Small van | 39 km | Equipment: sack truck</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="container">
+          <div class="section-title">
+            <h2>Pricing model and quote calculator</h2>
+            <p>
+              Companies post jobs for €2.50. Couriers quote per kilometer, with a
+              minimum of €0.35/km. The platform takes a 6% success fee.
+            </p>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Fee structure</h3>
+              <ul class="check-list">
+                <li>€2.50 charged immediately when a job is posted.</li>
+                <li>6% commission deducted before courier payout.</li>
+                <li>Future subscription tiers based on usage volume.</li>
+              </ul>
+              <div class="callout">
+                Subscription billing is planned for both companies and couriers
+                with usage-based pricing.
+              </div>
+            </div>
+            <div class="card calculator">
+              <h3>Quote calculator</h3>
+              <label>
+                Distance (km)
+                <input id="distance" type="number" min="0" step="1" value="120" />
+              </label>
+              <label>
+                Courier rate (€/km)
+                <input id="rate" type="number" min="0.35" step="0.01" value="0.55" />
+              </label>
+              <p id="rate-note" class="note warning" role="status" aria-live="polite">
+                Minimum rate enforced at €0.35/km.
+              </p>
+              <div class="calc-results">
+                <div>
+                  <span>Job value</span>
+                  <strong id="job-value">€0.00</strong>
+                </div>
+                <div>
+                  <span>Platform success fee (6%)</span>
+                  <strong id="success-fee">€0.00</strong>
+                </div>
+                <div>
+                  <span>Courier payout</span>
+                  <strong id="courier-payout">€0.00</strong>
+                </div>
+                <div>
+                  <span>Company total on completion</span>
+                  <strong id="company-total">€0.00</strong>
+                </div>
+                <div>
+                  <span>Posting fee</span>
+                  <strong>€2.50</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="app">
+        <div class="container">
+          <div class="section-title">
+            <h2>App experience</h2>
+            <p>
+              The mobile app includes live tracking, quote management, proof of
+              delivery, and accounting summaries for drivers and companies.
+            </p>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Driver app highlights</h3>
+              <ul class="check-list">
+                <li>Quote jobs by distance with minimum rate enforcement.</li>
+                <li>Capture photos and signatures at pickup and delivery.</li>
+                <li>Live GPS tracking while a job is active.</li>
+                <li>Earnings dashboard with invoice status.</li>
+              </ul>
+              <a class="secondary" href="app.html">Open app preview</a>
+            </div>
+            <div class="phone-preview">
+              <div class="phone">
+                <div class="phone-header">PriamyKuriér App</div>
+                <div class="phone-body">
+                  <div class="phone-card">
+                    <h4>Active delivery</h4>
+                    <p>Bratislava to Trnava · 55 km</p>
+                    <div class="phone-map"></div>
+                    <div class="phone-row">
+                      <span>Pickup proof</span>
+                      <span class="pill">3 photos</span>
+                    </div>
+                    <div class="phone-row">
+                      <span>Delivery proof</span>
+                      <span class="pill">Pending</span>
+                    </div>
+                    <button class="primary" type="button">Open tracking</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-title">
+            <h2>FAQ</h2>
+          </div>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Which languages are supported?</h3>
+              <p>
+                The launch version is English-first with Slovak localization planned
+                once the platform is live.
+              </p>
+            </div>
+            <div class="card">
+              <h3>How are payments handled?</h3>
+              <p>
+                Payments flow through the platform. Posting fees are charged at
+                upload, and the 6% success fee is deducted before courier payout.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Can you integrate compliance checks?</h3>
+              <p>
+                Yes. The platform is built to connect with external compliance
+                services or use an internal verification workflow.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Will subscriptions be added?</h3>
+              <p>
+                Subscription billing is planned with usage-based tiers for both
+                companies and couriers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section" id="contact">
+        <div class="container contact-card">
+          <div>
+            <h2>Ready to build PriamyKuriér?</h2>
+            <p>
+              Launch with the web platform and app preview today, then scale into
+              subscriptions, multilingual support, and expanded compliance tooling.
+            </p>
+          </div>
+          <button class="primary" type="button">Request a demo</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">PriamyKuriér</div>
+          <p>National courier marketplace for Slovakia.</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li>Job posting</li>
+            <li>Courier verification</li>
+            <li>Tracking and proof</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Apps</h4>
+          <ul>
+            <li>Driver app</li>
+            <li>Company portal</li>
+            <li>Accounting dashboards</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Pricing</h4>
+          <ul>
+            <li>€2.50 posting fee</li>
+            <li>6% success fee</li>
+            <li>Subscriptions coming soon</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 PriamyKuriér. All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>PriamyKuri&eacute;r | National Courier Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav__content">
+        <a class="brand" href="#top">
+          <span class="brand__mark"></span>
+          PriamyKuri&eacute;r
+        </a>
+        <nav class="nav__links" id="primary-nav">
+          <a href="#platform">Platform</a>
+          <a href="#fees">Fees</a>
+          <a href="#compliance">Compliance</a>
+          <a href="#tracking">Tracking</a>
+          <a href="#accounting">Accounting</a>
+          <a href="#map">Live Map</a>
+        </nav>
+        <div class="nav__actions">
+          <a class="button button--ghost" href="app.html">View App</a>
+          <button
+            class="button button--primary nav__toggle"
+            type="button"
+            data-toggle="nav"
+          >
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__content">
+          <div class="hero__copy">
+            <p class="eyebrow">National courier marketplace</p>
+            <h1>
+              PriamyKuri&eacute;r connects companies with verified courier
+              capacity on demand.
+            </h1>
+            <p class="lead">
+              Post delivery jobs in seconds, receive quotes from vetted
+              couriers, track live progress, and automate payments with
+              transparent fees.
+            </p>
+            <div class="hero__cta">
+              <a class="button button--primary" href="#fees"
+                >Explore fees</a
+              >
+              <a class="button button--ghost" href="app.html"
+                >Open app experience</a
+              >
+            </div>
+            <div class="hero__metrics">
+              <div>
+                <h3>&euro;2.50</h3>
+                <p>Job posting fee</p>
+              </div>
+              <div>
+                <h3>6%</h3>
+                <p>Success commission</p>
+              </div>
+              <div>
+                <h3>&ge; &euro;0.35/km</h3>
+                <p>Minimum per km quote</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__panel">
+            <div class="panel">
+              <div class="panel__header">
+                <span class="status-dot"></span>
+                Live job tracking
+              </div>
+              <div class="panel__body">
+                <div class="panel__row">
+                  <div>
+                    <p class="label">Pickup</p>
+                    <p class="value">Bratislava, SK</p>
+                  </div>
+                  <div>
+                    <p class="label">Drop-off</p>
+                    <p class="value">Kosice, SK</p>
+                  </div>
+                </div>
+                <div class="panel__timeline">
+                  <div class="timeline__step timeline__step--done">
+                    Dispatch confirmed
+                  </div>
+                  <div class="timeline__step timeline__step--active">
+                    En route with live GPS
+                  </div>
+                  <div class="timeline__step">Proof of delivery</div>
+                </div>
+                <div class="panel__meta">
+                  <span>Driver rating 4.9</span>
+                  <span>ETA 2h 15m</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel--light">
+              <h4>Instant visibility</h4>
+              <p>
+                Companies and couriers share the same live map, status
+                updates, and photo proofs for every job.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="platform">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Platform overview</p>
+            <h2>Two-sided marketplace with compliance-first workflows</h2>
+            <p>
+              Built for companies placing delivery jobs and courier
+              drivers or companies ready to quote, complete, and get paid.
+            </p>
+          </div>
+          <div class="grid grid--two">
+            <div class="card">
+              <h3>For companies</h3>
+              <ul class="list">
+                <li>Post on-demand or repeat delivery work.</li>
+                <li>Set job details, references, and requirements.</li>
+                <li>Review quotes and assign the right courier.</li>
+                <li>Track every live job and confirm delivery.</li>
+                <li>Automated invoicing with 45-day terms.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>For couriers</h3>
+              <ul class="list">
+                <li>Verified profile with vehicle and insurance checks.</li>
+                <li>Quote per km with minimum pricing safeguards.</li>
+                <li>Capture photos, signatures, and load notes.</li>
+                <li>Get paid automatically after completion.</li>
+                <li>Accounting dashboard for earnings and invoices.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card--wide">
+            <h3>Job posting essentials</h3>
+            <div class="grid grid--three">
+              <div>
+                <p class="label">Load details</p>
+                <p>
+                  Length, width, height, weight, and preferred van size.
+                </p>
+              </div>
+              <div>
+                <p class="label">Route information</p>
+                <p>
+                  Collection and delivery address, distance, and timing.
+                </p>
+              </div>
+              <div>
+                <p class="label">Extras &amp; references</p>
+                <p>
+                  Reference numbers and add-ons like straps, blankets,
+                  sack trucks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="fees">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Transparent fees</p>
+            <h2>Platform commissions are automatic and predictable</h2>
+            <p>
+              Every job posting is billed at &euro;2.50. Successful
+              completions apply a 6% success fee before courier payout.
+            </p>
+          </div>
+          <div class="grid grid--two">
+            <div class="card">
+              <h3>Fee calculator</h3>
+              <p class="muted">
+                Estimate the platform fees for a job value.
+              </p>
+              <label class="field">
+                Job value (&euro;)
+                <input
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  value="350"
+                  id="job-value"
+                />
+              </label>
+              <div class="fee-summary">
+                <div>
+                  <span>Posting fee</span>
+                  <strong id="fee-posting">&euro;2.50</strong>
+                </div>
+                <div>
+                  <span>Success fee (6%)</span>
+                  <strong id="fee-success">&euro;21.00</strong>
+                </div>
+                <div>
+                  <span>Courier payout</span>
+                  <strong id="fee-payout">&euro;329.00</strong>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Quote builder</h3>
+              <p class="muted">
+                Couriers quote per km. Minimum rate is &euro;0.35/km.
+              </p>
+              <label class="field">
+                Distance (km)
+                <input
+                  type="number"
+                  min="1"
+                  step="1"
+                  value="280"
+                  id="quote-distance"
+                />
+              </label>
+              <label class="field">
+                Rate (&euro;/km)
+                <input
+                  type="number"
+                  min="0.35"
+                  step="0.01"
+                  value="0.45"
+                  id="quote-rate"
+                />
+              </label>
+              <div class="fee-summary">
+                <div>
+                  <span>Total quote</span>
+                  <strong id="quote-total">&euro;126.00</strong>
+                </div>
+                <div>
+                  <span>Minimum allowed</span>
+                  <strong>&euro;0.35/km</strong>
+                </div>
+              </div>
+              <p class="note" id="quote-note">
+                Rate meets the minimum requirement.
+              </p>
+            </div>
+          </div>
+          <div class="card card--wide">
+            <h3>Payment flow</h3>
+            <ol class="list list--numbered">
+              <li>Company posts job and pays &euro;2.50 fee.</li>
+              <li>Courier wins job, completes delivery, uploads proof.</li>
+              <li>
+                Company is invoiced with 45-day terms, payment runs through
+                PriamyKuri&eacute;r.
+              </li>
+              <li>
+                Platform keeps 6% commission and sends the remainder to the
+                courier.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="compliance">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Compliance &amp; verification</p>
+            <h2>Verified drivers only, with external compliance checks</h2>
+            <p>
+              Driver onboarding includes vehicle ownership, insurance,
+              licensing, and identity verification. PriamyKuri&eacute;r can
+              connect to external compliance services or a built-in
+              verification workflow.
+            </p>
+          </div>
+          <div class="grid grid--three">
+            <div class="card">
+              <h4>Vehicle details</h4>
+              <p>
+                Size class, load area dimensions, and maximum load
+                capacity.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Insurance coverage</h4>
+              <p>
+                Proof of goods-in-transit coverage and required carrier
+                policies.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Identity checks</h4>
+              <p>
+                Driving licence and passport/ID validation before account
+                activation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="tracking">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Tracking &amp; proof of delivery</p>
+            <h2>Every delivery is tracked with photo and signature proof</h2>
+            <p>
+              Couriers capture sender/receiver names, photos at collection
+              and delivery, and signatures in-app for full visibility.
+            </p>
+          </div>
+          <div class="grid grid--two">
+            <div class="card">
+              <h3>Collection workflow</h3>
+              <ul class="list">
+                <li>Sender name and signature capture.</li>
+                <li>Photos of collection location.</li>
+                <li>Photos of goods loaded into the vehicle.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Delivery workflow</h3>
+              <ul class="list">
+                <li>Receiver name and signature capture.</li>
+                <li>Photos at delivery location.</li>
+                <li>Photos of goods safely delivered.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card--wide">
+            <h3>Live notifications</h3>
+            <p>
+              Companies receive status updates in-app and on the web as
+              each milestone is completed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="accounting">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Accounting</p>
+            <h2>Clear earnings for couriers and spend control for companies</h2>
+          </div>
+          <div class="grid grid--two">
+            <div class="card">
+              <h3>Courier dashboard</h3>
+              <ul class="list">
+                <li>Invoices awaiting payment and paid invoices.</li>
+                <li>Total earnings by day, week, month, year, or range.</li>
+                <li>Linked bank account for automated payouts.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Company dashboard</h3>
+              <ul class="list">
+                <li>Spend tracking with outstanding balances.</li>
+                <li>Date-range reporting for accounting teams.</li>
+                <li>Bank and accounting software integration.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="map">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Live jobs map</p>
+            <h2>Explore live jobs across Slovakia</h2>
+            <p>
+              Couriers and companies can open a live map to view posted
+              jobs, active routes, and available capacity.
+            </p>
+          </div>
+          <div class="map">
+            <div class="map__canvas">
+              <div class="map__label">Slovakia live map preview</div>
+              <div class="map__pin map__pin--one">1</div>
+              <div class="map__pin map__pin--two">2</div>
+              <div class="map__pin map__pin--three">3</div>
+              <div class="map__route"></div>
+            </div>
+            <div class="map__details">
+              <div class="map__card">
+                <h4>Active jobs</h4>
+                <p>Bratislava &rarr; Trnava</p>
+                <span class="tag">Available to quote</span>
+              </div>
+              <div class="map__card">
+                <h4>En route</h4>
+                <p>Zvolen &rarr; Kosice</p>
+                <span class="tag tag--active">Tracking live</span>
+              </div>
+              <div class="map__card">
+                <h4>Repeat contract</h4>
+                <p>Nitra &rarr; Presov</p>
+                <span class="tag">Scheduled</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">Roadmap</p>
+            <h2>Ready for subscriptions and Slovak localization</h2>
+            <p>
+              The platform launches in English first, with Slovak language
+              support planned. Subscription pricing for couriers and
+              companies can be enabled based on usage tiers.
+            </p>
+          </div>
+          <div class="grid grid--three">
+            <div class="card">
+              <h4>Phase 1</h4>
+              <p>Marketplace launch with payments and tracking.</p>
+            </div>
+            <div class="card">
+              <h4>Phase 2</h4>
+              <p>Subscription tiers based on volume and usage.</p>
+            </div>
+            <div class="card">
+              <h4>Phase 3</h4>
+              <p>Full Slovak localization for app and web.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <div>
+          <span class="brand brand--small">
+            <span class="brand__mark"></span>
+            PriamyKuri&eacute;r
+          </span>
+          <p class="muted">
+            National courier platform for on-demand and repeat work.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="#platform">Platform</a>
+          <a href="#fees">Fees</a>
+          <a href="#tracking">Tracking</a>
+          <a href="app.html">App</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PriamyKuri&eacute;r | National Courier Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#">
+          <span class="logo-mark"></span>
+          PriamyKuri&eacute;r
+        </a>
+        <nav class="nav-links">
+          <a href="#platform">Platform</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#fees">Fees</a>
+          <a href="#tracking">Tracking</a>
+          <a href="#accounting">Accounting</a>
+          <a href="#app-preview">App</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn ghost" href="app.html">Open app preview</a>
+          <button class="btn primary">Request a demo</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">National on-demand courier marketplace</p>
+            <h1>
+              Build reliable deliveries with PriamyKuri&eacute;r for companies and
+              self-employed couriers.
+            </h1>
+            <p class="lead">
+              Post delivery jobs, accept quotes, track vehicles live, and pay safely
+              through the platform. Automated fees handle &euro;2.50 per job post and
+              6% success fee on completion.
+            </p>
+            <div class="hero-actions">
+              <button class="btn primary">Start onboarding</button>
+              <a class="btn ghost" href="#fees">Estimate fees</a>
+            </div>
+            <div class="hero-badges">
+              <span class="pill">Minimum quote: &euro;0.35/km</span>
+              <span class="pill">English first, Slovak language ready</span>
+              <span class="pill">Subscriptions planned</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card header-card">
+              <h3>Live job snapshot</h3>
+              <div class="job-row">
+                <span>Bratislava &rarr; Ko&scaron;ice</span>
+                <strong>&euro;1.05/km</strong>
+              </div>
+              <div class="job-row muted">
+                <span>Load: 2.4m x 1.2m x 1.1m</span>
+                <span>350 kg</span>
+              </div>
+              <div class="job-row">
+                <span>Proof of pickup</span>
+                <span class="status success">Collected</span>
+              </div>
+              <div class="progress">
+                <span></span>
+              </div>
+              <div class="job-meta">
+                <div>
+                  <small>Estimated payout</small>
+                  <strong>&euro;412.20</strong>
+                </div>
+                <div>
+                  <small>ETA</small>
+                  <strong>2h 40m</strong>
+                </div>
+              </div>
+            </div>
+            <div class="card stats-card">
+              <div>
+                <small>Jobs posted today</small>
+                <strong>126</strong>
+              </div>
+              <div>
+                <small>Active couriers</small>
+                <strong>214</strong>
+              </div>
+              <div>
+                <small>On-time deliveries</small>
+                <strong>98.7%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>One platform for companies, couriers, and compliance.</h2>
+            <p>
+              PriamyKuri&eacute;r connects businesses and courier companies with vetted
+              van drivers. Jobs are posted with clear requirements, quotes are simple
+              per-km pricing, and payments are automated.
+            </p>
+          </div>
+          <div class="grid three">
+            <div class="card">
+              <h3>Job posting in minutes</h3>
+              <p>
+                Require size, weight, addresses, references, and special equipment
+                before a job goes live.
+              </p>
+              <ul class="list">
+                <li>Load dimensions and weight</li>
+                <li>Van size selector</li>
+                <li>Collection and delivery references</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Vetted courier network</h3>
+              <p>
+                Drivers verify vehicle ownership, goods-in-transit cover, and driving
+                credentials before quoting.
+              </p>
+              <ul class="list">
+                <li>Vehicle and insurance checks</li>
+                <li>Load area capacity validation</li>
+                <li>Passport or ID verification</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Payments through the platform</h3>
+              <p>
+                Automatically collect &euro;2.50 per job post and 6% success fee on
+                delivery completion.
+              </p>
+              <ul class="list">
+                <li>Escrow-style payouts</li>
+                <li>Auto-invoicing within 45 days</li>
+                <li>Bank payout onboarding</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>How it works</h2>
+            <p>Two streamlined journeys, one consistent experience.</p>
+          </div>
+          <div class="grid two">
+            <div class="card">
+              <h3>For companies</h3>
+              <ol class="steps">
+                <li>Post a job with full load and address details.</li>
+                <li>Review courier quotes and approve the best fit.</li>
+                <li>Track the live journey and proof-of-delivery photos.</li>
+                <li>Pay automatically with the invoice terms you set.</li>
+              </ol>
+            </div>
+            <div class="card">
+              <h3>For couriers</h3>
+              <ol class="steps">
+                <li>Verify vehicle, insurance, and ID with compliance checks.</li>
+                <li>Quote per km (minimum &euro;0.35/km).</li>
+                <li>Collect signatures and photos at pickup and delivery.</li>
+                <li>Generate invoices and get paid to your bank account.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Job posting requirements</h2>
+            <p>
+              Every job includes the details couriers need to quote accurately and
+              deliver safely.
+            </p>
+          </div>
+          <div class="grid four">
+            <div class="card mini">
+              <h4>Load profile</h4>
+              <p>Length, width, height, and weight.</p>
+            </div>
+            <div class="card mini">
+              <h4>Van size</h4>
+              <p>Small, medium, large, or specialist.</p>
+            </div>
+            <div class="card mini">
+              <h4>Addresses</h4>
+              <p>Pickup and delivery locations with references.</p>
+            </div>
+            <div class="card mini">
+              <h4>Special tools</h4>
+              <p>Straps, blankets, sack trucks, or other needs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fees" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Transparent fees &amp; quoting</h2>
+            <p>
+              &euro;2.50 per job post and 6% success fee on completed jobs. Couriers
+              quote per km with a hard minimum of &euro;0.35/km.
+            </p>
+          </div>
+          <div class="grid two">
+            <div class="card">
+              <h3>Fee calculator</h3>
+              <div class="form-row">
+                <label for="jobValue">Job value (&euro;)</label>
+                <input id="jobValue" type="number" min="0" step="0.01" value="600" />
+              </div>
+              <div class="fee-grid">
+                <div>
+                  <small>Post fee</small>
+                  <strong id="postFee">&euro;2.50</strong>
+                </div>
+                <div>
+                  <small>Success fee (6%)</small>
+                  <strong id="successFee">&euro;36.00</strong>
+                </div>
+                <div>
+                  <small>Platform total</small>
+                  <strong id="platformTotal">&euro;38.50</strong>
+                </div>
+                <div>
+                  <small>Courier payout</small>
+                  <strong id="courierPayout">&euro;564.00</strong>
+                </div>
+                <div>
+                  <small>Company total cost</small>
+                  <strong id="companyTotal">&euro;602.50</strong>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Quote calculator</h3>
+              <div class="form-row">
+                <label for="distanceKm">Distance (km)</label>
+                <input id="distanceKm" type="number" min="1" step="1" value="310" />
+              </div>
+              <div class="form-row">
+                <label for="rateKm">Rate per km (&euro;)</label>
+                <input
+                  id="rateKm"
+                  type="number"
+                  min="0.35"
+                  step="0.01"
+                  value="0.85"
+                />
+                <span id="rateHint" class="hint"></span>
+              </div>
+              <div class="total-row">
+                <span>Estimated quote total</span>
+                <strong id="quoteTotal">&euro;263.50</strong>
+              </div>
+              <p class="muted">
+                Minimum rate enforced automatically to protect fair pricing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tracking" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Tracking, proof of collection, proof of delivery</h2>
+            <p>
+              The app captures signatures, names, and photo evidence at pickup and
+              delivery while the map shows live progress.
+            </p>
+          </div>
+          <div class="grid three">
+            <div class="card">
+              <h3>Live tracking</h3>
+              <p>
+                Every active job reports position to a shared map view for companies
+                and couriers.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Collection proof</h3>
+              <p>
+                Capture sender name, signature, and loading photos directly in the app.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Delivery proof</h3>
+              <p>
+                Capture recipient name, signature, and delivery photos to close the job.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="accounting" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Accounting dashboards</h2>
+            <p>
+              Transparent payouts and liabilities for both drivers and companies.
+            </p>
+          </div>
+          <div class="grid two">
+            <div class="card">
+              <h3>Courier earnings</h3>
+              <ul class="list">
+                <li>Invoices waiting to be paid vs paid</li>
+                <li>Earnings by day, week, month, year, or custom range</li>
+                <li>Bank account connection for payouts</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Company spend</h3>
+              <ul class="list">
+                <li>Total paid on platform by period</li>
+                <li>Outstanding invoices and due dates</li>
+                <li>Integrations with accounting software</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Map of Slovakia job board</h2>
+            <p>
+              A dedicated map view highlights open jobs across Slovakia for fast
+              quoting.
+            </p>
+          </div>
+          <div class="map-card">
+            <div class="map-overlay">
+              <div>
+                <h3>Live jobs map</h3>
+                <p>Regional view with filters for van size and load type.</p>
+              </div>
+              <button class="btn ghost">Open map view</button>
+            </div>
+            <div class="map-grid">
+              <div class="map-pin"></div>
+              <div class="map-pin"></div>
+              <div class="map-pin"></div>
+              <div class="map-pin"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="app-preview">
+        <div class="container">
+          <div class="section-heading">
+            <h2>App experience preview</h2>
+            <p>
+              A mobile-first interface built for live jobs, photo capture, and signing.
+            </p>
+          </div>
+          <div class="grid three">
+            <div class="card phone-sim">
+              <h4>Job feed</h4>
+              <p>Open quotes, fast filters, clear pricing.</p>
+            </div>
+            <div class="card phone-sim">
+              <h4>Collection checklist</h4>
+              <p>Sender name, signature, and load photos.</p>
+            </div>
+            <div class="card phone-sim">
+              <h4>Delivery closeout</h4>
+              <p>Recipient signature, photos, and invoice trigger.</p>
+            </div>
+          </div>
+          <div class="center">
+            <a class="btn primary" href="app.html">Open full app view</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Ready for growth</h2>
+            <p>
+              English-first with Slovak translation planned. Subscription-based
+              access will be added later, with pricing based on usage.
+            </p>
+          </div>
+          <div class="grid two">
+            <div class="card">
+              <h3>Compliance integrations</h3>
+              <p>
+                Integrate with external verification providers or build internal checks
+                for vehicle ownership, insurance, and identity.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Payment orchestration</h3>
+              <p>
+                Payment flows can be handled via a compliant processor (for example,
+                Stripe Connect) to automate escrow and payouts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>PriamyKuri&eacute;r</h3>
+          <p>National courier marketplace for Slovakia and beyond.</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#platform">Features</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#tracking">Tracking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="app.html">App preview</a></li>
+            <li><a href="#accounting">Accounting</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; 2026 PriamyKuri&eacute;r. All rights reserved.</span>
+        <span class="muted">Built for modern courier operations.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
