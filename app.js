@@ -19,3 +19,15 @@ tabs.forEach((tab) => {
     activateScreen(tab.dataset.screenTarget);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (!tabs.length) {
+    return;
+  }
+
+  const initialTab =
+    document.querySelector(".app-tab.active") || tabs[0];
+  if (initialTab) {
+    activateScreen(initialTab.dataset.screenTarget);
+  }
+});

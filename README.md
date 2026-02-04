@@ -15,6 +15,7 @@ preview. The experience is English-first with Slovak localization planned.
 Open the files directly in your browser:
 
 - `index.html` for the website
+- `platform.html` for the platform workspace demo
 - `app.html` for the app preview
 
 Or run a simple local server:
@@ -26,4 +27,5 @@ python -m http.server 8080
 Then visit:
 
 - http://localhost:8080/index.html
+- http://localhost:8080/platform.html
 - http://localhost:8080/app.html
